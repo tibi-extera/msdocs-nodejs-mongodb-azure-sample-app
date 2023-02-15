@@ -25,11 +25,11 @@ block content
       div(class='col-sm-2') #{format(task.createDate, "yyyy-MM-dd")}
       div(class='col-sm-2')
         form(action='./completeTask' method='POST' class='form-registration')
-          input(type='hidden' name='_id' value=`${task._id}`)
+          input(class='complete' type='hidden' name='_id' value=`${task._id}`)
           button(class='btn btn-primary btn-sm mx-1' type='submit') Complete
       div(class='col-sm-2')
         form(action='./deleteTask' method='POST' class='form-registration')
-          input(type='hidden' name='_id' value=`${task._id}`)
+          input(class='delete' type='hidden' name='_id' value=`${task._id}`)
           button(class='btn btn-danger btn-sm mx-1') Delete
 
   h5(class='my-2') Completed tasks

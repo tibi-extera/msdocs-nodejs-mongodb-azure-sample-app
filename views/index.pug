@@ -11,6 +11,14 @@ block content
         div(class='col-md-2 text-end')
           button(class='btn btn-success btn-sm' type='submit') Add task
 
+  form(action='./createFile' method='POST' class='form-registration')
+    div(class='row my-3')
+        div(class='col-md-2 align-bottom')
+          label(for="file-name" class='fs-5') Upload file
+        div(class='col-md-8')
+          input(class="form-control form-control-sm" type="file" name='file-name', placeholder="Select file" )
+        div(class='col-md-2 text-end')
+          button(class='btn btn-success btn-sm' type='submit') Add task
 
   h5(class='my-2') Current tasks
 
